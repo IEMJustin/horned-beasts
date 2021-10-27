@@ -11,7 +11,7 @@ export default class Header extends Component {
             <Navbar.Brand href="#home">Parent and Child Demo</Navbar.Brand>
           </Container>
         </Navbar> */}
-        <h1>Header</h1>
+        <h1 style={{textAlign:'center'}}>Horned Beasts</h1>
       </div>
     )
   }
