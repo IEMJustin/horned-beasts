@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './Main.css';
 
 export default class Footer extends Component {
     render() {
         return (
-            <p>Author is Justin AsuncionEsmena</p>
+            <footer>Author is Justin AsuncionEsmena</footer>
         )
     }
 }
