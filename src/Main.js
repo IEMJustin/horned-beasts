@@ -1,10 +1,28 @@
 import React, { Component } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Modal } from 'react-bootstrap';
 import HornedBeast from './HornedBeast.js';
-import data from './data.json'
+import data from './data.json';
 
 class Main extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            showModal: false
+        }
+    }
+
+    showModal = () => {
+        this.setState({ showModal:true })
+    }
+
+    hideModal = () => {
+        this.setState({ showModal: false })
+    }
+
+    updateBeast = (element) => {
+        this.setState({ selectedBeast: element })
+    }
 
     render(){
         return(
@@ -13,11 +31,23 @@ class Main extends Component {
                     data.map(element => {
                         return (
                             <div>
-                            <HornedBeast title={element.title} description={element.description} image_url={element.image_url} keyword={element.keyword} horns={element.horns} />
+                            <HornedBeast 
+                            title={element.title} 
+                            description={element.description} 
+                            image_url={element.image_url} 
+                            keyword={element.keyword} 
+                            horns={element.horns}
+                            updateBeast={this.props.updateBeast}
+                            showModal={this.props.showModal}
+                            />
                             </div>
                         )
                     })
                 }
+                <Modal 
+                element={this.state.selectedBeast} 
+                hideModal={this.hideModal}
+                showModal={this.state.Modal}/>
             </Container>
         )
     }
