@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  color: blanchedalmond;
+  box-shadow:0px 1px 1px blanchedalmond;
+}
+
+h1 {
+  border-style:groove;
+  border-color: blanchedalmond;
+  color: blanchedalmond;
+}
+
+h2 {
+  border-style:groove;
+  border-color: blanchedalmond;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: blanchedalmond;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
