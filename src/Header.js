@@ -6,11 +6,6 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar bg="dark" variant="dark">
-          <Container>
-            <Navbar.Brand href="#home">Parent and Child Demo</Navbar.Brand>
-          </Container>
-        </Navbar> */}
         <h1 style={{textAlign:'center'}}>Horned Beasts</h1>
       </div>
     )
