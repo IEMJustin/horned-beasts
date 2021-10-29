@@ -1,8 +1,7 @@
-import { Component } from "react";
-import { Modal } from "react-bootstrap";
-import Button from "react-bootstrap";
+import { Component, Button } from "react";
+import Modal from "react-bootstrap";
 
-export default class SelectedBeast extends Component {
+class SelectedBeast extends Component {
 
     render() {
         return (
@@ -36,6 +35,7 @@ export default class SelectedBeast extends Component {
     }
 }
 
+export default SelectedBeast
 // {/* <h2>{this.props.title}</h2>
 // <img onClick={this.handleClick} src={this.props.image_url} alt={'img'} width='600px'/>
 // <p>{this.props.description}</p>
